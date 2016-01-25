@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Guilt-Free Bandcamp",
+  "version": "0.1",
+  "default_locale": "en",
+  "description": "This extension overrides the annoying prompt to purchase music on bandcamp",
+  "icons": {},
+
+
+  "browser_action": "icon.png",
+
+  "author": "@FAJITA_MANE",
+  "background": {
+    "scripts": "overridepopup.js",
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+    "externally_connectable": {
+    "matches": ["*://*.bandcamp.com/*"]
+  },
+  "homepage_url": "http://github.com/FajitaMane/guilt-free-bandcamp",
+  "incognito": "split",
+  "minimum_chrome_version": "19",
+  "offline_enabled": true,
+  "optional_permissions": ["tabs"],
+  "permissions": ["tabs"],
+  "short_name": "G-F Bandcamp",
+  "version_name": "0.1"
+}
