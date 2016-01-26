@@ -1,6 +1,6 @@
 function removeDialog(){
 	var dialog = $('play-limit-dialog').parent();
-	if (dialog){
+	if (dialog[0]){
 		alert("dialog detected");
 	}
 	$(dialog).remove();
