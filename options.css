@@ -1,0 +1,9 @@
+.character {
+	cursor: pointer;
+	margin-left: 40px;
+	margin-top: 40px;
+	font-size: 24px;
+}
+.character:hover {
+	text-decoration: underline black;
+}

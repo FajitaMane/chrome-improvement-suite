@@ -9,6 +9,8 @@ function removeDialog(){
 if ($(document)){
 	$(document).on('change', removeDialog());
 }
+
+//alert("on bandcamp");
 /*
 chrome.runtime.onInstalled.addListener(function() {
 	alert("listener attached");
